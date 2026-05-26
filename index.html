@@ -99,42 +99,6 @@
       "inLanguage": ["en", "zh-CN"],
       "url": "https://edanyang.github.io/#tool",
       "about": {"@id": "https://edanyang.github.io/#defined-term-set"}
-    },
-    {
-      "@type": "Article",
-      "@id": "https://edanyang.github.io/#article-01",
-      "headline": "关于一类海外品牌的玩法 · 一些工作笔记",
-      "alternativeHeadline": "Notes on a class of overseas brand-building",
-      "author": {"@id": "https://edanyang.github.io/#person"},
-      "creator": {"@id": "https://edanyang.github.io/#person"},
-      "publisher": {"@id": "https://edanyang.github.io/#person"},
-      "datePublished": "2026-05",
-      "inLanguage": ["zh-CN", "en"],
-      "url": "https://www.linkedin.com/pulse/%E5%85%B3%E4%BA%8E%E4%B8%80%E7%B1%BB%E6%B5%B7%E5%A4%96%E5%93%81%E7%89%8C%E7%9A%84%E7%8E%A9%E6%B3%95-%E4%B8%80%E4%BA%9B%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0-edan-yang-gqnfc",
-      "about": {"@id": "https://edanyang.github.io/#defined-term-set"},
-      "keywords": "brand strategy, concept assets, cross-border DTC, Decision Tax of Setup, 跨境品牌, 概念资产"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://edanyang.github.io/#article-02",
-      "headline": "你不是累,你是在替加法时代买单",
-      "alternativeHeadline": "You're Not Tired. You're Paying for the Addition Era.",
-      "author": {"@id": "https://edanyang.github.io/#person"},
-      "creator": {"@id": "https://edanyang.github.io/#person"},
-      "publisher": {"@id": "https://edanyang.github.io/#person"},
-      "datePublished": "2026-05-22",
-      "inLanguage": ["zh-CN", "en"],
-      "url": "https://www.linkedin.com/pulse/%E4%BD%A0%E4%B8%8D%E6%98%AF%E7%B4%AF%E4%BD%A0%E6%98%AF%E5%9C%A8%E6%9B%BF%E5%8A%A0%E6%B3%95%E6%97%B6%E4%BB%A3%E4%B9%B0%E5%8D%95-edan-yang-mqkgc",
-      "about": [
-        {"@id": "https://edanyang.github.io/#term-setup-fatigue"},
-        {"@id": "https://edanyang.github.io/#term-decision-tax"}
-      ],
-      "citation": [
-        "Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. Behavioral and Brain Sciences, 24(1), 87-185.",
-        "Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue when switching between work tasks. Organizational Behavior and Human Decision Processes, 109(2), 168-181.",
-        "Mark, G., Gudith, D., & Klocke, U. (2008). The cost of interrupted work: More speed and stress. CHI '08, 107-110."
-      ],
-      "keywords": "Setup Fatigue, addition era, subtraction, cognitive load, attention residue, working memory, context switching, 加法时代, 减法, 认知负荷"
     }
   ]
 }
@@ -711,66 +675,8 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 }
 .pdf-side-body{font-size:.95rem;line-height:1.8;color:var(--ink-soft);margin-bottom:14px}
 
-.archive-cards{margin-top:64px;display:grid;grid-template-columns:1fr;gap:32px;max-width:560px;margin-left:auto;margin-right:auto}
-
-/* SERIES LIST · LinkedIn 系列文章 */
-.series-block{margin-top:80px;padding-top:64px;border-top:1px solid rgba(31, 58, 92, 0.12)}
-.series-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:40px}
-.series-tag{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--steel-deep);
-}
-.series-meta{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.05em;color:var(--ink-mute);
-}
-.series-list{display:flex;flex-direction:column;gap:0}
-.series-item{
-  display:grid;grid-template-columns:80px 1fr;gap:32px;
-  padding:32px 0;border-top:1px solid rgba(31, 58, 92, 0.08);
-  align-items:start;
-}
-.series-item:last-child{border-bottom:1px solid rgba(31, 58, 92, 0.08)}
-@media (max-width:780px){
-  .series-item{grid-template-columns:1fr;gap:8px}
-}
-.series-num{
-  font-family:"Fraunces", serif;
-  font-size:2.4rem;font-weight:300;color:var(--steel-sky);
-  line-height:1;letter-spacing:-.02em;
-}
-.series-body{display:flex;flex-direction:column;gap:8px}
-.series-date{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.1em;color:var(--ink-mute);
-}
-.series-title{
-  font-family:"Fraunces", serif;
-  font-size:1.2rem;line-height:1.4;color:var(--ink);
-  font-weight:500;margin:2px 0 4px;
-}
-.series-summary{
-  font-size:.88rem;line-height:1.75;color:var(--ink-soft);
-  margin-bottom:10px;
-}
-.series-link{
-  display:inline-block;
-  font-family:"JetBrains Mono", monospace;
-  font-size:.72rem;letter-spacing:.1em;color:var(--steel-deep);
-  text-decoration:none;border-bottom:1px solid var(--steel-deep);
-  padding-bottom:2px;align-self:flex-start;
-  transition:color .2s ease;
-}
-.series-link:hover{color:var(--steel-sky);border-bottom-color:var(--steel-sky)}
-.series-item.series-upcoming{opacity:.55}
-.series-item.series-upcoming .series-num{color:var(--ink-mute)}
-.series-link-pending{
-  display:inline-block;
-  font-family:"JetBrains Mono", monospace;
-  font-size:.72rem;letter-spacing:.1em;color:var(--ink-mute);
-  font-style:italic;align-self:flex-start;
-}
+.archive-cards{margin-top:80px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:780px){.archive-cards{grid-template-columns:1fr}}
 .archive-card{padding:32px 32px;background:var(--mist);border-left:3px solid var(--steel-sky)}
 .archive-card.casebook{background:var(--steel-deep);color:var(--paper);border-left-color:var(--steel-sky)}
 .archive-card-label{
@@ -1312,11 +1218,96 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
   </div>
 </section>
 
-<!-- SECTION 05 · ARCHIVE -->
-<section class="section archive-section">
+<!-- SECTION 05 · JUDGMENT TOOLKIT · A GROWING SET -->
+<section class="section tool-section" id="decision-translation">
   <div class="wrap">
     <div class="section-head">
       <span class="section-head-num">05</span>
+      <h2 class="serif">判断落地</h2>
+      <span class="section-head-en">JUDGMENT TOOLKIT · A GROWING SET</span>
+    </div>
+    <p class="tool-intro serif">
+      判断在你脑子里很清楚。送出去之后,要经过对面的理解、决策、资源分配、推进——每一步都在损耗。<br/><br/>
+      这一组工具,是让你提前看到每一步会卡在哪里,以及怎么解。
+    </p>
+
+    <!-- 适合谁 / 不适合 -->
+    <div class="tool-mechanic" style="margin-top:48px;margin-bottom:24px;">
+      <div class="tool-step">
+        <div class="tool-step-num">适合谁 · WHO THIS IS FOR</div>
+        <div class="tool-step-body" style="margin-top:14px;">
+          · 手里握着专业判断、但需要别人拍板才能落地的人<br/>
+          <span style="color:var(--steel-soft);font-size:.88em;">医生 / 律师 / 工程师 / 顾问 / 设计师 / 品牌人 / HR / 研究员 / 任何中层 / 任何要为自己专业判断负责的人</span><br/><br/>
+          · 经常遇到"我说清楚了,但他没接住"或"提案送出去三天没回音"的人
+        </div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">不适合 · WHO THIS IS NOT FOR</div>
+        <div class="tool-step-body" style="margin-top:14px;">
+          · 已经能稳定推动决策落地的人——你不需要这个工具<br/><br/>
+          · 给同级、给自己、给公众写的人——这工具是给"需要别人拍板"的场景用的
+        </div>
+      </div>
+    </div>
+
+    <!-- 当前已上线 · SHIPPED 分隔 -->
+    <div class="next-intro" style="margin-top:64px;margin-bottom:24px;">SHIPPED · 当前已上线</div>
+
+    <!-- Skill 1 · Decision Translation -->
+    <div class="tool-attribution">
+      <div class="tool-attr-row"><span class="tool-attr-label">工具 Skill</span><span class="tool-attr-value">Decision Translation · 决策翻译</span></div>
+      <div class="tool-attr-row"><span class="tool-attr-label">设计 Design</span><span class="tool-attr-value">Edan Yang · 2026.05</span></div>
+      <div class="tool-attr-row"><span class="tool-attr-label">版本 Version</span><span class="tool-attr-value">v7.3 · 7 轮压力测试迭代</span></div>
+    </div>
+
+    <div class="tool-mechanic">
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 1</div>
+        <div class="tool-step-title">诊断决策者</div>
+        <div class="tool-step-body">不是受众画像,是判断系统。7 个维度,3 个核心。每次只问 1 个,根据回答动态追问。</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 2</div>
+        <div class="tool-step-title">搭建双版本</div>
+        <div class="tool-step-body">一页决策版骨架(决策者用)+ 完整证据版骨架(未来复核者用)。Claude 管结构,你填判断。</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 3</div>
+        <div class="tool-step-title">交付前校验</div>
+        <div class="tool-step-body">7 项生活类比校验,3 秒内 yes/no。不通过则回到 Phase 2 调整。</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 4</div>
+        <div class="tool-step-title">推进卡点扫描</div>
+        <div class="tool-step-body">扫描信息、关系、校准三层卡点。看到判断送出去之后,会卡在哪里、谁会卡你、怎么解。</div>
+      </div>
+    </div>
+
+    <div class="tool-cta-card">
+      <div class="tool-cta-label">SKILL · OPEN SOURCE</div>
+      <div class="tool-cta-title">Decision Translation · v7.3</div>
+      <p class="tool-cta-body">
+        一个 Claude skill。配套姊妹工具 Cognitive Load Check 一起用——前者管判断怎么落地,后者管你自己的注意力如何不被消耗。两者同属一个母概念:注意力即税。
+      </p>
+      <a href="https://github.com/edanyang/decision-translation-skill" target="_blank" rel="noopener" class="tool-cta-btn">
+        View on GitHub →
+      </a>
+    </div>
+
+    <!-- MORE ON THE WAY -->
+    <div class="next-intro" style="margin-top:64px;margin-bottom:18px;">MORE ON THE WAY · 更多正在路上</div>
+    <p class="next-note" style="margin-top:0;">
+      判断落地工具集是一个持续扩展的协议库。下一组在草稿中。<br/>
+      A growing protocol library. The next set is in draft.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 06 · ARCHIVE -->
+<section class="section archive-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-head-num">06</span>
       <h2 class="serif">长文与归档</h2>
       <span class="section-head-en">LONG-FORM + ARCHIVE</span>
     </div>
@@ -1344,52 +1335,15 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
         </p>
       </div>
     </div>
-    <div class="series-block">
-      <div class="series-head">
-        <div class="series-tag">LINKEDIN 长文系列 · DECISION TAX</div>
-        <div class="series-meta">2026.05 起 · 中英双语 · 每周更新</div>
-      </div>
-
-      <div class="series-list">
-        <article class="series-item">
-          <div class="series-num">02</div>
-          <div class="series-body">
-            <div class="series-date">2026.05.22</div>
-            <h3 class="series-title">你不是累,你是在替加法时代买单</h3>
-            <p class="series-summary">
-              拆 Decision Tax of Setup 的第一层 Setup Fatigue · 引入"加法时代→减法时代"作为时代命题框架 · 包含 Cowan / Leroy / Mark 三项学术锚点 · 提出"减法不是砍东西,是把决策权还给用户"。
-            </p>
-            <a href="https://www.linkedin.com/pulse/%E4%BD%A0%E4%B8%8D%E6%98%AF%E7%B4%AF%E4%BD%A0%E6%98%AF%E5%9C%A8%E6%9B%BF%E5%8A%A0%E6%B3%95%E6%97%B6%E4%BB%A3%E4%B9%B0%E5%8D%95-edan-yang-mqkgc" target="_blank" rel="noopener" class="series-link">在 LinkedIn 阅读 →</a>
-          </div>
-        </article>
-
-        <article class="series-item">
-          <div class="series-num">01</div>
-          <div class="series-body">
-            <div class="series-date">2026.05</div>
-            <h3 class="series-title">关于一类海外品牌的玩法 · 一些工作笔记</h3>
-            <p class="series-summary">
-              关于「概念资产」作为品牌资产形态的工作笔记 · 从 Notion / Muji / Aesop / Calm 等品牌出发 · 首次引入 Decision Tax of Setup 概念。
-            </p>
-            <a href="https://www.linkedin.com/pulse/%25E5%2585%25B3%25E4%25BA%258E%25E4%25B8%2580%25E7%25B1%25BB%25E6%25B5%25B7%25E5%25A4%2596%25E5%2593%2581%25E7%2589%258C%25E7%259A%2584%25E7%258E%25A9%25E6%25B3%2595-%25E4%25B8%2580%25E4%25BA%259B%25E5%25B7%25A5%25E4%25BD%259C%25E7%25AC%2594%25E8%25AE%25B0-edan-yang-gqnfc" target="_blank" rel="noopener" class="series-link">在 LinkedIn 阅读 →</a>
-          </div>
-        </article>
-
-        <article class="series-item series-upcoming">
-          <div class="series-num">03</div>
-          <div class="series-body">
-            <div class="series-date">即将更新</div>
-            <h3 class="series-title">Work Noise · 不是被打断,是更细的东西</h3>
-            <p class="series-summary">
-              Decision Tax 的第二层 · 拆"工作中的噪音"为什么不同于"被打断" · 现代工作里所有"不是工作本身"的事如何持续消耗带宽。
-            </p>
-            <span class="series-link series-link-pending">敬请期待</span>
-          </div>
-        </article>
-      </div>
-    </div>
-
     <div class="archive-cards">
+      <div class="archive-card">
+        <div class="archive-card-label">LINKEDIN ARTICLE · 长文 · 2026.05</div>
+        <h3 class="archive-card-title">关于一类海外品牌的玩法 · 一些工作笔记</h3>
+        <p class="archive-card-body">
+          关于「概念资产」作为品牌资产形态的工作笔记 · 从 Notion / Muji / Aesop / Calm 等品牌出发 · 中英双语 · 在 LinkedIn 首发。
+        </p>
+        <a href="https://www.linkedin.com/pulse/%25E5%2585%25B3%25E4%25BA%258E%25E4%25B8%2580%25E7%25B1%25BB%25E6%25B5%25B7%25E5%25A4%2596%25E5%2593%2581%25E7%2589%258C%25E7%259A%2584%25E7%258E%25A9%25E6%25B3%2595-%25E4%25B8%2580%25E4%25BA%259B%25E5%25B7%25A5%25E4%25BD%259C%25E7%25AC%2594%25E8%25AE%25B0-edan-yang-gqnfc" target="_blank" rel="noopener" class="archive-card-cta">在 LinkedIn 阅读 →</a>
+      </div>
       <div class="archive-card casebook">
         <div class="archive-card-label">CASEBOOK · 私下索取</div>
         <h3 class="archive-card-title">Mukiya 操盘 Casebook · 15 页 PDF</h3>
@@ -1445,7 +1399,7 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 <section class="section timeline-section about-subview" id="aboutSubview" hidden>
   <div class="wrap">
     <div class="section-head">
-      <span class="section-head-num">07</span>
+      <span class="section-head-num">08</span>
       <h2 class="serif">关于</h2>
       <span class="section-head-en">WORK TIMELINE · CROSS-DISCIPLINARY PATH</span>
     </div>

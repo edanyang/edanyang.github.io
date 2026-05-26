@@ -98,42 +98,6 @@
       "inLanguage": ["en", "zh-CN"],
       "url": "https://edanyang.github.io/index-en.html#tool",
       "about": {"@id": "https://edanyang.github.io/#defined-term-set"}
-    },
-    {
-      "@type": "Article",
-      "@id": "https://edanyang.github.io/#article-01",
-      "headline": "Notes on a class of overseas brand-building",
-      "alternativeHeadline": "关于一类海外品牌的玩法 · 一些工作笔记",
-      "author": {"@id": "https://edanyang.github.io/#person"},
-      "creator": {"@id": "https://edanyang.github.io/#person"},
-      "publisher": {"@id": "https://edanyang.github.io/#person"},
-      "datePublished": "2026-05",
-      "inLanguage": ["en", "zh-CN"],
-      "url": "https://www.linkedin.com/pulse/%E5%85%B3%E4%BA%8E%E4%B8%80%E7%B1%BB%E6%B5%B7%E5%A4%96%E5%93%81%E7%89%8C%E7%9A%84%E7%8E%A9%E6%B3%95-%E4%B8%80%E4%BA%9B%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0-edan-yang-gqnfc",
-      "about": {"@id": "https://edanyang.github.io/#defined-term-set"},
-      "keywords": "brand strategy, concept assets, cross-border DTC, Decision Tax of Setup"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://edanyang.github.io/#article-02",
-      "headline": "You're Not Tired. You're Paying for the Addition Era.",
-      "alternativeHeadline": "你不是累,你是在替加法时代买单",
-      "author": {"@id": "https://edanyang.github.io/#person"},
-      "creator": {"@id": "https://edanyang.github.io/#person"},
-      "publisher": {"@id": "https://edanyang.github.io/#person"},
-      "datePublished": "2026-05-22",
-      "inLanguage": ["en", "zh-CN"],
-      "url": "https://www.linkedin.com/pulse/%E4%BD%A0%E4%B8%8D%E6%98%AF%E7%B4%AF%E4%BD%A0%E6%98%AF%E5%9C%A8%E6%9B%BF%E5%8A%A0%E6%B3%95%E6%97%B6%E4%BB%A3%E4%B9%B0%E5%8D%95-edan-yang-mqkgc",
-      "about": [
-        {"@id": "https://edanyang.github.io/#term-setup-fatigue"},
-        {"@id": "https://edanyang.github.io/#term-decision-tax"}
-      ],
-      "citation": [
-        "Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. Behavioral and Brain Sciences, 24(1), 87-185.",
-        "Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue when switching between work tasks. Organizational Behavior and Human Decision Processes, 109(2), 168-181.",
-        "Mark, G., Gudith, D., & Klocke, U. (2008). The cost of interrupted work: More speed and stress. CHI '08, 107-110."
-      ],
-      "keywords": "Setup Fatigue, addition era, subtraction, cognitive load, attention residue, working memory, context switching"
     }
   ]
 }
@@ -710,66 +674,8 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 }
 .pdf-side-body{font-size:.95rem;line-height:1.8;color:var(--ink-soft);margin-bottom:14px}
 
-.archive-cards{margin-top:64px;display:grid;grid-template-columns:1fr;gap:32px;max-width:560px;margin-left:auto;margin-right:auto}
-
-/* SERIES LIST · LinkedIn long-form series */
-.series-block{margin-top:80px;padding-top:64px;border-top:1px solid rgba(31, 58, 92, 0.12)}
-.series-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:40px}
-.series-tag{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--steel-deep);
-}
-.series-meta{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.05em;color:var(--ink-mute);
-}
-.series-list{display:flex;flex-direction:column;gap:0}
-.series-item{
-  display:grid;grid-template-columns:80px 1fr;gap:32px;
-  padding:32px 0;border-top:1px solid rgba(31, 58, 92, 0.08);
-  align-items:start;
-}
-.series-item:last-child{border-bottom:1px solid rgba(31, 58, 92, 0.08)}
-@media (max-width:780px){
-  .series-item{grid-template-columns:1fr;gap:8px}
-}
-.series-num{
-  font-family:"Fraunces", serif;
-  font-size:2.4rem;font-weight:300;color:var(--steel-sky);
-  line-height:1;letter-spacing:-.02em;
-}
-.series-body{display:flex;flex-direction:column;gap:8px}
-.series-date{
-  font-family:"JetBrains Mono", monospace;
-  font-size:.7rem;letter-spacing:.1em;color:var(--ink-mute);
-}
-.series-title{
-  font-family:"Fraunces", serif;
-  font-size:1.2rem;line-height:1.4;color:var(--ink);
-  font-weight:500;margin:2px 0 4px;
-}
-.series-summary{
-  font-size:.88rem;line-height:1.75;color:var(--ink-soft);
-  margin-bottom:10px;
-}
-.series-link{
-  display:inline-block;
-  font-family:"JetBrains Mono", monospace;
-  font-size:.72rem;letter-spacing:.1em;color:var(--steel-deep);
-  text-decoration:none;border-bottom:1px solid var(--steel-deep);
-  padding-bottom:2px;align-self:flex-start;
-  transition:color .2s ease;
-}
-.series-link:hover{color:var(--steel-sky);border-bottom-color:var(--steel-sky)}
-.series-item.series-upcoming{opacity:.55}
-.series-item.series-upcoming .series-num{color:var(--ink-mute)}
-.series-link-pending{
-  display:inline-block;
-  font-family:"JetBrains Mono", monospace;
-  font-size:.72rem;letter-spacing:.1em;color:var(--ink-mute);
-  font-style:italic;align-self:flex-start;
-}
+.archive-cards{margin-top:80px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:780px){.archive-cards{grid-template-columns:1fr}}
 .archive-card{padding:32px 32px;background:var(--mist);border-left:3px solid var(--steel-sky)}
 .archive-card.casebook{background:var(--steel-deep);color:var(--paper);border-left-color:var(--steel-sky)}
 .archive-card-label{
@@ -1313,11 +1219,95 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
   </div>
 </section>
 
-<!-- SECTION 05 · ARCHIVE -->
-<section class="section archive-section">
+<!-- SECTION 05 · JUDGMENT TOOLKIT · A GROWING SET -->
+<section class="section tool-section" id="decision-translation">
   <div class="wrap">
     <div class="section-head">
       <span class="section-head-num">05</span>
+      <h2 class="serif">Where Judgment Lands</h2>
+      <span class="section-head-en">JUDGMENT TOOLKIT · A GROWING SET</span>
+    </div>
+    <p class="tool-intro serif">
+      Your judgment is clear in your head. Once it leaves you, it has to survive understanding, decision-making, resource allocation, and execution — and loses something at every step.<br/><br/>
+      This toolkit helps you see where each step will get stuck, before it does.
+    </p>
+
+    <!-- Who this is for / not for -->
+    <div class="tool-mechanic" style="margin-top:48px;margin-bottom:24px;">
+      <div class="tool-step">
+        <div class="tool-step-num">WHO THIS IS FOR</div>
+        <div class="tool-step-body" style="margin-top:14px;">
+          · People holding professional judgment but needing someone else to approve before it lands<br/>
+          <span style="color:var(--steel-soft);font-size:.88em;">Doctors / Lawyers / Engineers / Consultants / Designers / Brand operators / HR / Researchers / Any mid-level professional / Anyone accountable for their own professional judgment</span><br/><br/>
+          · Anyone repeatedly hitting "I said it clearly, but they didn't receive it" or "I sent the proposal three days ago, still no response"
+        </div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">WHO THIS IS NOT FOR</div>
+        <div class="tool-step-body" style="margin-top:14px;">
+          · People who already advance decisions reliably — you don't need this<br/><br/>
+          · People writing to peers, themselves, or public audiences — this is for "needs someone else's approval" scenarios
+        </div>
+      </div>
+    </div>
+
+    <!-- SHIPPED divider -->
+    <div class="next-intro" style="margin-top:64px;margin-bottom:24px;">SHIPPED · CURRENTLY AVAILABLE</div>
+
+    <!-- Skill 1 · Decision Translation -->
+    <div class="tool-attribution">
+      <div class="tool-attr-row"><span class="tool-attr-label">Skill</span><span class="tool-attr-value">Decision Translation</span></div>
+      <div class="tool-attr-row"><span class="tool-attr-label">Design</span><span class="tool-attr-value">Edan Yang · 2026.05</span></div>
+      <div class="tool-attr-row"><span class="tool-attr-label">Version</span><span class="tool-attr-value">v7.3 · 7 rounds of stress-test iteration</span></div>
+    </div>
+
+    <div class="tool-mechanic">
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 1</div>
+        <div class="tool-step-title">Diagnose the decision-maker</div>
+        <div class="tool-step-body">Not audience persona — judgment system. 7 dimensions, 3 core. Ask one at a time. Adapt based on answer.</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 2</div>
+        <div class="tool-step-title">Build dual-version output</div>
+        <div class="tool-step-body">One-page decision version (for current decision-maker) + full evidence version (for future auditor). Claude handles structure. You fill judgment.</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 3</div>
+        <div class="tool-step-title">Pre-delivery validation</div>
+        <div class="tool-step-body">7 plain-language checks. Three seconds, yes / no. Fail → return to Phase 2.</div>
+      </div>
+      <div class="tool-step">
+        <div class="tool-step-num">PHASE 4</div>
+        <div class="tool-step-title">Cant-pass-point scan</div>
+        <div class="tool-step-body">Scan information, relationship, and calibration gaps. See where judgment will get stuck after delivery, who will block it, and how to unblock.</div>
+      </div>
+    </div>
+
+    <div class="tool-cta-card">
+      <div class="tool-cta-label">SKILL · OPEN SOURCE</div>
+      <div class="tool-cta-title">Decision Translation · v7.3</div>
+      <p class="tool-cta-body">
+        A Claude skill. Pairs with its companion Cognitive Load Check — this one handles how judgment lands; the other handles how your own attention isn't burned up. Both share one parent concept: attention as tax.
+      </p>
+      <a href="https://github.com/edanyang/decision-translation-skill" target="_blank" rel="noopener" class="tool-cta-btn">
+        View on GitHub →
+      </a>
+    </div>
+
+    <!-- MORE ON THE WAY -->
+    <div class="next-intro" style="margin-top:64px;margin-bottom:18px;">MORE ON THE WAY</div>
+    <p class="next-note" style="margin-top:0;">
+      A growing protocol library. The next set is in draft.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 06 · ARCHIVE -->
+<section class="section archive-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-head-num">06</span>
       <h2 class="serif">Long-form &amp; Archive</h2>
       <span class="section-head-en">Writings · PDF · Casebook</span>
     </div>
@@ -1345,52 +1335,15 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
         </p>
       </div>
     </div>
-    <div class="series-block">
-      <div class="series-head">
-        <div class="series-tag">LINKEDIN LONG-FORM SERIES · DECISION TAX</div>
-        <div class="series-meta">Since May 2026 · Bilingual · Weekly</div>
-      </div>
-
-      <div class="series-list">
-        <article class="series-item">
-          <div class="series-num">02</div>
-          <div class="series-body">
-            <div class="series-date">2026.05.22</div>
-            <h3 class="series-title">You're Not Tired. You're Paying for the Addition Era.</h3>
-            <p class="series-summary">
-              Unpacks the first layer of Decision Tax of Setup — Setup Fatigue. Frames the era-level thesis: "from addition to subtraction." Grounded in three academic anchors (Cowan / Leroy / Mark). Proposes: "subtraction isn't cutting things — it's returning decision authority to the user."
-            </p>
-            <a href="https://www.linkedin.com/pulse/%E4%BD%A0%E4%B8%8D%E6%98%AF%E7%B4%AF%E4%BD%A0%E6%98%AF%E5%9C%A8%E6%9B%BF%E5%8A%A0%E6%B3%95%E6%97%B6%E4%BB%A3%E4%B9%B0%E5%8D%95-edan-yang-mqkgc" target="_blank" rel="noopener" class="series-link">Read on LinkedIn →</a>
-          </div>
-        </article>
-
-        <article class="series-item">
-          <div class="series-num">01</div>
-          <div class="series-body">
-            <div class="series-date">2026.05</div>
-            <h3 class="series-title">Notes on a class of overseas brand-building</h3>
-            <p class="series-summary">
-              Working notes on "concept assets" as a form of brand asset — observed from Notion, Muji, Aesop, Calm — and the first introduction of the Decision Tax of Setup concept.
-            </p>
-            <a href="https://www.linkedin.com/pulse/%25E5%2585%25B3%25E4%25BA%258E%25E4%25B8%2580%25E7%25B1%25BB%25E6%25B5%25B7%25E5%25A4%2596%25E5%2593%2581%25E7%2589%258C%25E7%259A%2584%25E7%258E%25A9%25E6%25B3%2595-%25E4%25B8%2580%25E4%25BA%259B%25E5%25B7%25A5%25E4%25BD%259C%25E7%25AC%2594%25E8%25AE%25B0-edan-yang-gqnfc" target="_blank" rel="noopener" class="series-link">Read on LinkedIn →</a>
-          </div>
-        </article>
-
-        <article class="series-item series-upcoming">
-          <div class="series-num">03</div>
-          <div class="series-body">
-            <div class="series-date">Upcoming</div>
-            <h3 class="series-title">Work Noise · Not Interruption, Something Subtler</h3>
-            <p class="series-summary">
-              The second layer of Decision Tax. Unpacks why "noise during work" is different from "being interrupted" — and how everything in modern work that isn't the work itself quietly consumes bandwidth.
-            </p>
-            <span class="series-link series-link-pending">Coming soon</span>
-          </div>
-        </article>
-      </div>
-    </div>
-
     <div class="archive-cards">
+      <div class="archive-card">
+        <div class="archive-card-label">LINKEDIN ARTICLE · LONG-FORM</div>
+        <h3 class="archive-card-title">Notes on a class of overseas brand-building</h3>
+        <p class="archive-card-body">
+          Working notes on "concept assets" as a form of brand asset — observed from Notion, Muji, Aesop, Calm — and one attempt to land the approach in Chinese cross-border DTC. Bilingual · first published on LinkedIn (date pending).
+        </p>
+        <a href="#" target="_blank" rel="noopener" class="archive-card-cta">Coming soon →</a>
+      </div>
       <div class="archive-card casebook">
         <div class="archive-card-label">CASEBOOK · BY REQUEST</div>
         <h3 class="archive-card-title">Mukiya Operations Casebook · 15-page PDF</h3>
@@ -1445,7 +1398,7 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 <section class="section timeline-section about-subview" id="aboutSubview" hidden>
   <div class="wrap">
     <div class="section-head">
-      <span class="section-head-num">07</span>
+      <span class="section-head-num">08</span>
       <h2 class="serif">About</h2>
       <span class="section-head-en">Work Timeline · Cross-disciplinary Path</span>
     </div>
