@@ -96,7 +96,7 @@
       "dateCreated": "2026-02",
       "datePublished": "2026-04",
       "inLanguage": ["en", "zh-CN"],
-      "url": "https://edanyang.github.io/index-en.html#tool",
+      "url": "https://edanyang.github.io/tool-en.html",
       "about": {"@id": "https://edanyang.github.io/#defined-term-set"}
     }
   ]
@@ -823,6 +823,58 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 .hero-role{animation-delay:.25s}
 .hero-statement{animation-delay:.35s}
 .hero-meta{animation-delay:.55s}
+
+/* ── MASTHEAD NAV ── */
+.masthead-brand{text-decoration:none;font-weight:600;white-space:nowrap}
+.brand-short{display:none}
+.masthead-nav{display:flex;align-items:center;flex:1;justify-content:center;white-space:nowrap}
+.masthead-nav a{font-size:.84rem;font-weight:600;letter-spacing:.03em;color:var(--ink-soft);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:3px;white-space:nowrap;transition:color .2s,border-color .2s}
+.masthead-nav a:not(:first-child){margin-left:26px}
+.masthead-nav a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
+.masthead.on-dark .masthead-nav a{color:rgba(255,255,255,.8)}
+.masthead.on-dark .masthead-nav a:hover{color:var(--paper);border-bottom-color:var(--steel-sky)}
+.masthead{transition:background .3s ease,border-color .3s ease,transform .35s cubic-bezier(.4,0,.2,1)}
+.masthead.nav-hidden{transform:translateY(-100%)}
+@media(max-width:680px){
+  .brand-full{display:none}.brand-short{display:inline}
+  .masthead-brand{font-size:.62rem;letter-spacing:.12em}
+  .masthead-nav{flex:1;justify-content:flex-end}
+  .masthead-nav a{font-size:.74rem}
+  .masthead-nav a:not(:first-child){margin-left:18px}
+  .masthead-meta{display:none}
+}
+/* ── ROUTE / 内容分流 ── */
+.route-section{padding:60px 0 28px;background:var(--mist-warm)}
+.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.route-grid{grid-template-columns:1fr}}
+.route-card{display:flex;flex-direction:column;gap:9px;padding:26px;background:var(--paper);border:1px solid var(--rule);border-radius:6px;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s}
+.route-card:hover{border-color:var(--steel-sky);transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(15,33,56,.25)}
+.route-num{font-size:11px;letter-spacing:.18em;color:var(--steel-sky);text-transform:uppercase}
+.route-title{font-size:21px;color:var(--ink)}
+.route-desc{font-size:13.5px;line-height:1.6;color:var(--ink-mute)}
+.route-card-cta{font-size:13px;color:var(--steel);letter-spacing:.04em;margin-top:2px}
+/* ── 4.28 CAMPAIGN (editorial stat strip) ── */
+.mukiya-campaign{margin-top:4px}
+.mukiya-campaign .deliverable-body{margin-top:10px;max-width:760px}
+.cm-stats{display:flex;flex-wrap:wrap;margin-top:26px;border-top:1px solid rgba(255,255,255,.14);padding-top:24px}
+.cm-stat{flex:1 1 0;min-width:140px;padding-right:26px}
+.cm-stat + .cm-stat{padding-left:26px;border-left:1px solid rgba(255,255,255,.1)}
+.cm-stat-v{font-size:24px;font-weight:600;color:var(--paper);line-height:1;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cm-stat-l{font-size:12.5px;color:rgba(255,255,255,.8);margin-top:11px;line-height:1.45}
+.cm-stat-l span{display:block;font-size:11px;color:rgba(255,255,255,.42);margin-top:3px}
+@media(max-width:560px){
+  .cm-stats{padding-top:20px}
+  .cm-stat{flex:1 1 50%;min-width:0;padding:0 0 18px 0;border-left:none}
+  .cm-stat + .cm-stat{padding-left:0;border-left:none}
+  .cm-stat:nth-child(even){padding-left:20px}
+}
+/* ── PAGE HEADER / BACK ── */
+.page-header{padding:120px 0 0}
+.back-nav{margin-bottom:26px}
+.back-link{font-size:13px;letter-spacing:.05em;color:var(--steel);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px}
+.back-link:hover{border-bottom-color:var(--steel)}
+.page-header-kicker{font-size:11px;letter-spacing:.2em;color:var(--ink-mute);text-transform:uppercase}
+
 </style>
 </head>
 
@@ -831,7 +883,8 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 <!-- MASTHEAD -->
 <header class="masthead" id="masthead">
   <div class="wrap">
-    <span class="masthead-brand">A WORKING RECORD · 2026</span>
+    <a class="masthead-brand" href="index-en.html"><span class="brand-full">A WORKING RECORD · 2026</span><span class="brand-short">EDAN YANG</span></a>
+    <nav class="masthead-nav"><a href="#concept">Concept</a><a href="tool-en.html">Tool</a><a href="skill-en.html">Decision Skill</a></nav>
     <span class="masthead-meta">
       <a href="index.html" class="lang-link">CN</a>
       <span class="lang-divider">·</span>
@@ -849,23 +902,15 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
     <p class="hero-statement serif fade-in">
       Working on identifying <em>what NOT to do</em> under multi-constraint conditions — rarer than figuring out what to do, independent of budget scale.
     </p>
-    <div class="hero-meta fade-in">
-      <div class="hero-meta-item">
-        Current Role
-        <strong>Brand &amp; Marketing Lead at Mukiya</strong>
-      </div>
-      <div class="hero-meta-item">
-        Background
-        <strong>Agency Client Strategy · Google Cross-Border · Front-line Sales</strong>
-      </div>
-      <div class="hero-meta-item">
-        Based
-        <strong>Shenzhen / Guangzhou</strong>
-      </div>
-    </div>
   </div>
 </section>
 
+<!-- ROUTE -->
+<section class="section route-section" id="route"><div class="wrap"><div class="route-grid">
+    <a class="route-card" href="#concept"><span class="route-num">01 · Here</span><span class="route-title serif">Concept & Operating</span><span class="route-desc">Decision Tax of Setup — the original concept asset, plus the 0→1 brand judgment and desensitized data from Mukiya.</span><span class="route-card-cta">↓ Read on</span></a>
+    <a class="route-card" href="tool-en.html"><span class="route-num">02 · Tool</span><span class="route-title serif">Interactive Diagnostic</span><span class="route-desc">Cognitive Load Check — measure today's cognitive load and the cost of rebuilding focus.</span><span class="route-card-cta">Open the tool →</span></a>
+    <a class="route-card" href="skill-en.html"><span class="route-num">03 · Method</span><span class="route-title serif">Decision Translation</span><span class="route-desc">A reusable skill — turning repeated judgment calls into a method anyone can apply.</span><span class="route-card-cta">View the method →</span></a>
+</div></div></section>
 <!-- SECTION 01 · METHODOLOGY -->
 <section class="section method-section">
   <div class="wrap">
@@ -960,7 +1005,7 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
       <div class="deliverable">
         <div class="deliverable-tag">B · TOOL</div>
         <div class="deliverable-title">Interactive diagnostic</div>
-        <p class="deliverable-body">Converts the abstract concept into individually measurable values. 4-tier classification + recovery time recommendation. Available directly on the landing page.</p>
+        <p class="deliverable-body">Converts the abstract concept into individually measurable values. 4-tier classification + recovery time recommendation. Available on the dedicated tool page.</p>
       </div>
       <div class="deliverable">
         <div class="deliverable-tag">C · COLLAB</div>
@@ -969,6 +1014,16 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
       </div>
     </div>
 
+        <div class="mukiya-campaign" id="campaign-metrics">
+      <div class="subhead">Work Safe Work Smart · 2026.04 Campaign</div>
+      <p class="deliverable-body">Built around the ILO World Day for Safety and Health at Work (Apr 28), led with the original concept Decision Tax of Setup, pairing a UK ergonomics expert with a creator matrix and PR to cold-start the brand 0→1 — turning the invisible cost of work into a brand narrative that is searchable and structured for AI retrieval.</p>
+      <div class="cm-stats">
+        <div class="cm-stat"><div class="cm-stat-v">$5.94</div><div class="cm-stat-l">Weighted CPM<span>Industry $8–15 · −25–60%</span></div></div>
+        <div class="cm-stat"><div class="cm-stat-v">5.66%</div><div class="cm-stat-l">Creator ER<span>Industry 1.5–3% · 2–3× higher</span></div></div>
+        <div class="cm-stat"><div class="cm-stat-v">2×</div><div class="cm-stat-l">Google brand-term clicks<span>concept terms indexed</span></div></div>
+        <div class="cm-stat"><div class="cm-stat-v">ROI 3+</div><div class="cm-stat-l">Return<span>brand 0→1 · 0-follower cold start</span></div></div>
+      </div>
+    </div>
     <div class="mukiya-link-card">
       <div>
         <div class="mukiya-link-label">FULL LANDING PAGE</div>
@@ -982,7 +1037,7 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 </section>
 
 <!-- SECTION 03 · CONCEPT -->
-<section class="section concept-section">
+<section class="section concept-section" id="concept">
   <div class="wrap">
     <div class="section-head">
       <span class="section-head-num">03</span>
@@ -1055,251 +1110,6 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
   <span class="schema-key">"datePublished"</span>: "2026-04"
 }</pre>
     </div>
-  </div>
-</section>
-
-<!-- SECTION 04 · TOOL · FULL INTERACTIVE -->
-<section class="section tool-section" id="tool">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head-num">04</span>
-      <h2 class="serif">Interactive Diagnostic</h2>
-      <span class="section-head-en">Cognitive Load Check</span>
-    </div>
-    <p class="tool-intro serif">Turning abstract cognitive load into something you can measure today.</p>
-
-    <div class="tool-attribution">
-      <div class="tool-attr-row"><span class="tool-attr-label">Design</span><span class="tool-attr-value">Edan Yang · Feb–Mar 2026</span></div>
-      <div class="tool-attr-row"><span class="tool-attr-label">First Deployed</span><span class="tool-attr-value">Mukiya official landing page · Apr 2026</span></div>
-      <div class="tool-attr-row"><span class="tool-attr-label">Author Build</span><span class="tool-attr-value">edanyang.github.io · May 2026</span></div>
-    </div>
-
-    <div class="tool-card" id="clcCard">
-
-      <div class="clc-intro" id="clcIntro">
-        <div class="clc-tag">An Interactive Tool · By Edan Yang</div>
-        <h3 class="clc-title">Cognitive Load Check</h3>
-        <div class="clc-subtitle"><em>a brief self-diagnostic for the unseen weight of your work day</em></div>
-        <p class="clc-desc">
-          A short, honest check on the way you work today: which tools are open, what you're really thinking about, what gets in the way. At the end, you'll see a picture of your own day — and how much of it was already spent before the work began.
-        </p>
-        <button type="button" class="clc-cta" id="clcStartBtn">
-          <span>Begin the check</span><span class="clc-arrow">→</span>
-        </button>
-      </div>
-
-      <div class="clc-step" id="clcStep1" hidden>
-        <div class="clc-progress"><span class="clc-dot on"></span><span class="clc-dot"></span><span class="clc-progress-label">Step 1 of 2</span></div>
-        <h3 class="clc-h">Which tools are you using right now?</h3>
-        <p class="clc-lead">Select every tool you'd typically have open on a working day.</p>
-
-        <div class="clc-section-label">AI Assistants</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="14">ChatGPT</span><span class="clc-chip" data-w="12">Claude</span>
-          <span class="clc-chip" data-w="10">Gemini</span><span class="clc-chip" data-w="11">Copilot</span>
-          <span class="clc-chip" data-w="9">Perplexity</span><span class="clc-chip" data-w="8">Grok</span>
-        </div>
-
-        <div class="clc-section-label">Writing &amp; Editing</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="6">Notion AI</span><span class="clc-chip" data-w="5">Grammarly</span>
-          <span class="clc-chip" data-w="7">Jasper</span><span class="clc-chip" data-w="6">Copy.ai</span>
-          <span class="clc-chip" data-w="6">Sudowrite</span><span class="clc-chip" data-w="6">Lex</span>
-        </div>
-
-        <div class="clc-section-label">Meetings &amp; Async</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="8">Otter.ai</span><span class="clc-chip" data-w="7">Loom</span>
-          <span class="clc-chip" data-w="9">Zoom AI</span><span class="clc-chip" data-w="7">Fireflies</span>
-          <span class="clc-chip" data-w="8">Granola</span>
-        </div>
-
-        <div class="clc-section-label">Workflow &amp; Ops</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="10">Slack AI</span><span class="clc-chip" data-w="9">Linear AI</span>
-          <span class="clc-chip" data-w="8">Zapier AI</span><span class="clc-chip" data-w="7">Make</span>
-          <span class="clc-chip" data-w="6">Reclaim</span><span class="clc-chip" data-w="7">Motion</span>
-        </div>
-
-        <div class="clc-section-label">Design &amp; Visual</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="9">Figma AI</span><span class="clc-chip" data-w="8">Midjourney</span>
-          <span class="clc-chip" data-w="7">Runway</span><span class="clc-chip" data-w="6">Canva AI</span>
-          <span class="clc-chip" data-w="7">Adobe Firefly</span>
-        </div>
-
-        <div class="clc-section-label">Research &amp; Search</div>
-        <div class="clc-chips">
-          <span class="clc-chip" data-w="8">Elicit</span><span class="clc-chip" data-w="7">Consensus</span>
-          <span class="clc-chip" data-w="8">Glean</span><span class="clc-chip" data-w="7">Browse AI</span>
-          <span class="clc-chip" data-w="6">Synthesia</span>
-        </div>
-
-        <div class="clc-slider-block">
-          <div class="clc-slider-top">
-            <span class="clc-slider-q">How many real thinking problems have you tackled today — the kind that need judgment, a decision, or genuine creative work?</span>
-            <span class="clc-slider-num" id="clcSliderNum">6</span>
-          </div>
-          <input type="range" min="1" max="15" value="6" step="1" id="clcSlider" />
-          <div class="clc-slider-scale"><span>1</span><span>5</span><span>10</span><span>15</span></div>
-          <p class="clc-slider-msg" id="clcSliderMsg">6 deep problems — sustained overload territory. Several working-memory states competing for the same room.</p>
-        </div>
-
-        <div class="clc-sel-meta">
-          <span class="clc-count-txt" id="clcCountTxt">Select at least one tool to continue</span>
-          <button type="button" class="clc-cta" id="clcGoBtn" disabled>
-            <span>See your result</span><span class="clc-arrow">→</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="clc-step" id="clcStep2" hidden>
-        <div class="clc-progress"><span class="clc-dot"></span><span class="clc-dot on"></span><span class="clc-progress-label">Step 2 of 2</span></div>
-
-        <div class="clc-status" id="clcStatus">
-          <div class="clc-status-tag" id="clcStatusTag">Checking</div>
-          <div class="clc-status-headline" id="clcStatusHeadline"></div>
-        </div>
-
-        <div class="clc-verdict">
-          <div class="clc-verdict-label">What's happening</div>
-          <div class="clc-verdict-body" id="clcVerdictCause"></div>
-        </div>
-
-        <div class="clc-verdict">
-          <div class="clc-verdict-label">The numbers</div>
-          <div class="clc-num-grid">
-            <div class="clc-num-card clc-num-full">
-              <div class="clc-num-label">Recovery time today</div>
-              <div class="clc-num-val" id="clcRTotal">—</div>
-              <div class="clc-num-unit" id="clcRPct">share of your working day</div>
-            </div>
-            <div class="clc-num-card">
-              <div class="clc-num-label">From tool switching</div>
-              <div class="clc-num-meta" id="clcRToolCount">— tools</div>
-              <div class="clc-num-val" id="clcRToolMin">—</div>
-              <div class="clc-num-unit">~1–2 minutes to re-orient each cross-tool switch</div>
-            </div>
-            <div class="clc-num-card">
-              <div class="clc-num-label">From deep problems</div>
-              <div class="clc-num-meta" id="clcRProbCount">— problems</div>
-              <div class="clc-num-val" id="clcRProbMin">—</div>
-              <div class="clc-num-unit" id="clcRProbAvg">cost per problem increases as the count grows</div>
-            </div>
-            <div class="clc-num-card clc-num-full">
-              <div class="clc-num-label">Weekly estimate</div>
-              <div class="clc-num-val" id="clcRWeekly">—</div>
-              <div class="clc-num-unit">hours spent recovering — invisible to any work log</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="clc-verdict">
-          <div class="clc-verdict-label">For the rest of today</div>
-          <div class="clc-verdict-body" id="clcVerdictRest"></div>
-        </div>
-
-        <div class="clc-actions">
-          <button type="button" class="clc-cta-outline" id="clcResetBtn">← Start over</button>
-        </div>
-
-        <div class="clc-footnote">
-          Estimates are grounded in research by Dr. Gloria Mark (UC Irvine) on context-switching, and in the broader cognitive-science literature on working-memory reconstruction costs. The figures reflect a pattern, not a precise measurement.
-        </div>
-      </div>
-
-    </div>
-
-    <div class="tier-row">
-      <div class="tier normal"><div class="tier-name">NORMAL</div><div class="tier-value">20–30 min recovery</div></div>
-      <div class="tier light"><div class="tier-name">LIGHT</div><div class="tier-value">45–60 min</div></div>
-      <div class="tier high"><div class="tier-name">SUSTAINED</div><div class="tier-value">90+ min</div></div>
-      <div class="tier severe"><div class="tier-name">SEVERE</div><div class="tier-value">Days, not hours</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 05 · JUDGMENT TOOLKIT · A GROWING SET -->
-<section class="section tool-section" id="decision-translation">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="section-head-num">05</span>
-      <h2 class="serif">Where Judgment Lands</h2>
-      <span class="section-head-en">JUDGMENT TOOLKIT · A GROWING SET</span>
-    </div>
-    <p class="tool-intro serif">
-      Your judgment is clear in your head. Once it leaves you, it has to survive understanding, decision-making, resource allocation, and execution — and loses something at every step.<br/><br/>
-      This toolkit helps you see where each step will get stuck, before it does.
-    </p>
-
-    <!-- Who this is for / not for -->
-    <div class="tool-mechanic" style="margin-top:48px;margin-bottom:24px;">
-      <div class="tool-step">
-        <div class="tool-step-num">WHO THIS IS FOR</div>
-        <div class="tool-step-body" style="margin-top:14px;">
-          · People holding professional judgment but needing someone else to approve before it lands<br/>
-          <span style="color:var(--steel-soft);font-size:.88em;">Doctors / Lawyers / Engineers / Consultants / Designers / Brand operators / HR / Researchers / Any mid-level professional / Anyone accountable for their own professional judgment</span><br/><br/>
-          · Anyone repeatedly hitting "I said it clearly, but they didn't receive it" or "I sent the proposal three days ago, still no response"
-        </div>
-      </div>
-      <div class="tool-step">
-        <div class="tool-step-num">WHO THIS IS NOT FOR</div>
-        <div class="tool-step-body" style="margin-top:14px;">
-          · People who already advance decisions reliably — you don't need this<br/><br/>
-          · People writing to peers, themselves, or public audiences — this is for "needs someone else's approval" scenarios
-        </div>
-      </div>
-    </div>
-
-    <!-- SHIPPED divider -->
-    <div class="next-intro" style="margin-top:64px;margin-bottom:24px;">SHIPPED · CURRENTLY AVAILABLE</div>
-
-    <!-- Skill 1 · Decision Translation -->
-    <div class="tool-attribution">
-      <div class="tool-attr-row"><span class="tool-attr-label">Skill</span><span class="tool-attr-value">Decision Translation</span></div>
-      <div class="tool-attr-row"><span class="tool-attr-label">Design</span><span class="tool-attr-value">Edan Yang · 2026.05</span></div>
-      <div class="tool-attr-row"><span class="tool-attr-label">Version</span><span class="tool-attr-value">v7.3 · 7 rounds of stress-test iteration</span></div>
-    </div>
-
-    <div class="tool-mechanic">
-      <div class="tool-step">
-        <div class="tool-step-num">PHASE 1</div>
-        <div class="tool-step-title">Diagnose the decision-maker</div>
-        <div class="tool-step-body">Not audience persona — judgment system. 7 dimensions, 3 core. Ask one at a time. Adapt based on answer.</div>
-      </div>
-      <div class="tool-step">
-        <div class="tool-step-num">PHASE 2</div>
-        <div class="tool-step-title">Build dual-version output</div>
-        <div class="tool-step-body">One-page decision version (for current decision-maker) + full evidence version (for future auditor). Claude handles structure. You fill judgment.</div>
-      </div>
-      <div class="tool-step">
-        <div class="tool-step-num">PHASE 3</div>
-        <div class="tool-step-title">Pre-delivery validation</div>
-        <div class="tool-step-body">7 plain-language checks. Three seconds, yes / no. Fail → return to Phase 2.</div>
-      </div>
-      <div class="tool-step">
-        <div class="tool-step-num">PHASE 4</div>
-        <div class="tool-step-title">Cant-pass-point scan</div>
-        <div class="tool-step-body">Scan information, relationship, and calibration gaps. See where judgment will get stuck after delivery, who will block it, and how to unblock.</div>
-      </div>
-    </div>
-
-    <div class="tool-cta-card">
-      <div class="tool-cta-label">SKILL · OPEN SOURCE</div>
-      <div class="tool-cta-title">Decision Translation · v7.3</div>
-      <p class="tool-cta-body">
-        A Claude skill. Pairs with its companion Cognitive Load Check — this one handles how judgment lands; the other handles how your own attention isn't burned up. Both share one parent concept: attention as tax.
-      </p>
-      <a href="https://github.com/edanyang/decision-translation" target="_blank" rel="noopener" class="tool-cta-btn">
-        View on GitHub →
-      </a>
-    </div>
-
-    <!-- MORE ON THE WAY -->
-    <div class="next-intro" style="margin-top:64px;margin-bottom:18px;">MORE ON THE WAY</div>
-    <p class="next-note" style="margin-top:0;">
-      A growing protocol library. The next set is in draft.
-    </p>
   </div>
 </section>
 
@@ -1381,12 +1191,12 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 
       <!-- Casebook -->
       <div class="archive-card casebook">
-        <div class="archive-card-label">CASEBOOK · BY REQUEST</div>
+        <div class="archive-card-label">CASEBOOK</div>
         <h3 class="archive-card-title">Mukiya Operations Casebook · 15-page PDF</h3>
         <p class="archive-card-body">
           A 15-page internal record — the decision-flow timeline of taking Mukiya from 0 to 1, four counter-consensus strategic judgments in detail, overseas paradigm references, and verifiable anchor points for reverse due-diligence. Not publicly released.
         </p>
-        <a href="mailto:yang668268@gmail.com?subject=Casebook%20Request" class="archive-card-cta">Email for Casebook →</a>
+        <a href="#campaign-metrics" class="archive-card-cta">View the data →</a>
       </div>
     </div>
   </div>
@@ -1510,6 +1320,15 @@ a:hover{color:var(--steel-deep);border-bottom-color:var(--steel)}
 </footer>
 
 <script>
+
+/* ── NAV: hide on scroll-down, show on scroll-up ── */
+(function(){
+  var mh=document.getElementById('masthead'); if(!mh) return;
+  var last=window.pageYOffset, ticking=false;
+  function upd(){var y=window.pageYOffset; if(y>last && y>120) mh.classList.add('nav-hidden'); else mh.classList.remove('nav-hidden'); last=y; ticking=false;}
+  window.addEventListener('scroll',function(){ if(!ticking){window.requestAnimationFrame(upd);ticking=true;} },{passive:true});
+})();
+
 (function(){
   const masthead = document.getElementById('masthead');
   const darkSections = document.querySelectorAll('.mukiya-section, .concept-section, .author-section');
